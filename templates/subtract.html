@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<form name="result">
+	Subtraction Result:<br>
+	<input class="textview" name"result" value="{{ result }}">
+</form><br>
+<form method="post" action="/subtract">
+	<div class"form-group">
+		First Entry:<br>
+		<input type="integer" name="first_entry"><br>
+		Second Entry:<br>
+		<input type="integer" name="second_entry"><br><br>
+	</div>
+	<input class="btn" type="submit" value="Submit">
+</form>
+{% endblock %}
